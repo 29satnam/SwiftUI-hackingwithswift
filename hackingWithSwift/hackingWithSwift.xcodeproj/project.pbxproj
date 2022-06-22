@@ -14,9 +14,11 @@
 		A05F7CD0285F17F6004AFE35 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05F7CCD285F17F6004AFE35 /* Order.swift */; };
 		A05F7CD1285F17F6004AFE35 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = A05F7CCE285F17F6004AFE35 /* menu.json */; };
 		A0A5B471285EE443004C9656 /* hackingWithSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5B470285EE443004C9656 /* hackingWithSwiftApp.swift */; };
-		A0A5B473285EE443004C9656 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5B472285EE443004C9656 /* ContentView.swift */; };
+		A0A5B473285EE443004C9656 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5B472285EE443004C9656 /* MenuView.swift */; };
 		A0A5B475285EE444004C9656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A5B474285EE444004C9656 /* Assets.xcassets */; };
 		A0A5B478285EE444004C9656 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A5B477285EE444004C9656 /* Preview Assets.xcassets */; };
+		A0B562C62863089C009F7D26 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B562C52863089C009F7D26 /* FavouriteView.swift */; };
+		A0B562CA28631AA8009F7D26 /* FavourtiteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B562C928631AA8009F7D26 /* FavourtiteRow.swift */; };
 		A0B98DF32861F54300B390AE /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B98DF22861F54300B390AE /* OrderView.swift */; };
 		A0B98DF52861F74000B390AE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B98DF42861F74000B390AE /* MainView.swift */; };
 		A0B98DF72862304B00B390AE /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B98DF62862304B00B390AE /* CheckoutView.swift */; };
@@ -31,9 +33,11 @@
 		A05F7CCE285F17F6004AFE35 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		A0A5B46D285EE443004C9656 /* hackingWithSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hackingWithSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A5B470285EE443004C9656 /* hackingWithSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackingWithSwiftApp.swift; sourceTree = "<group>"; };
-		A0A5B472285EE443004C9656 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A0A5B472285EE443004C9656 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		A0A5B474285EE444004C9656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0A5B477285EE444004C9656 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A0B562C52863089C009F7D26 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
+		A0B562C928631AA8009F7D26 /* FavourtiteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavourtiteRow.swift; sourceTree = "<group>"; };
 		A0B98DF22861F54300B390AE /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		A0B98DF42861F74000B390AE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A0B98DF62862304B00B390AE /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
@@ -82,7 +86,9 @@
 			children = (
 				A0A5B470285EE443004C9656 /* hackingWithSwiftApp.swift */,
 				A0B98DF42861F74000B390AE /* MainView.swift */,
-				A0A5B472285EE443004C9656 /* ContentView.swift */,
+				A0B562C52863089C009F7D26 /* FavouriteView.swift */,
+				A0B562C928631AA8009F7D26 /* FavourtiteRow.swift */,
+				A0A5B472285EE443004C9656 /* MenuView.swift */,
 				A030A79C2860243C0060F2DB /* ItemRow.swift */,
 				A030A79E2860A9B20060F2DB /* ItemDetail.swift */,
 				A0B98DF22861F54300B390AE /* OrderView.swift */,
@@ -176,10 +182,12 @@
 				A030A79F2860A9B20060F2DB /* ItemDetail.swift in Sources */,
 				A0B98DF52861F74000B390AE /* MainView.swift in Sources */,
 				A0B98DF72862304B00B390AE /* CheckoutView.swift in Sources */,
+				A0B562CA28631AA8009F7D26 /* FavourtiteRow.swift in Sources */,
 				A0B98DF32861F54300B390AE /* OrderView.swift in Sources */,
-				A0A5B473285EE443004C9656 /* ContentView.swift in Sources */,
+				A0A5B473285EE443004C9656 /* MenuView.swift in Sources */,
 				A0A5B471285EE443004C9656 /* hackingWithSwiftApp.swift in Sources */,
 				A05F7CD0285F17F6004AFE35 /* Order.swift in Sources */,
+				A0B562C62863089C009F7D26 /* FavouriteView.swift in Sources */,
 				A030A79D2860243C0060F2DB /* ItemRow.swift in Sources */,
 				A05F7CCF285F17F6004AFE35 /* Menu.swift in Sources */,
 				A05F7CCB285F17DC004AFE35 /* Helper.swift in Sources */,

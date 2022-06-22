@@ -12,26 +12,30 @@ struct ItemDetail: View {
     let item: MenuItem
     
     var body: some View {
-        VStack {
+        List {
             ZStack(alignment: .bottomTrailing) {
                 Image(item.mainImage)
                     .resizable()
                     .scaledToFit()
+                    //.padding()
                 Text("Photo: \(item.photoCredit)")
                     .padding(4)
                     .background(.black)
                     .font(.caption)
                     .foregroundColor(.white)
+                    //.padding()
                     .offset(x: -5, y: -5)
             }
             Text(item.description)
-                .padding()
+                //.padding()
+            Button("Add to favourite") {
+                order.addToFavourite(item: item)
+            }
             
             Button("Order This") {
                 order.add(item: item)
             }
-            .font(.headline)
-            Spacer()
+
         }
         .navigationTitle(item.name)
         .navigationBarTitleDisplayMode(.inline)

@@ -13,12 +13,16 @@ struct CheckoutView: View {
     @State private var addLoyalityDetails = false
     @State private var loyalityNumber = ""
     @State private var tipAmount = 0
-    
+    @State private var pickupTimeChoice = "Tonight"
+
     @State private var showingAlert = false
 
 
     let paymentTypes = ["Cash", "Credit Card", "Hacking Points"]
     let tipAmounts = [5, 10, 15, 20, 0]
+    
+    let pickupTiming = ["Now", "Tonight", "Tomorrow Morning"]
+
     
     var totalPrice: String {
         let formatter = NumberFormatter()
@@ -31,7 +35,7 @@ struct CheckoutView: View {
     
     var body: some View {
         Form {
-            Section {
+            Section(header: Text("Payment Method")) {
                 Picker("How do you want to pay?", selection: $paymentType) {
                     ForEach(paymentTypes, id: \.self) {
                         Text($0)
@@ -51,10 +55,18 @@ struct CheckoutView: View {
                 }
                 .pickerStyle(.segmented)
             }
+            
+            Section(header: Text("Pickup Time")) {
+                Picker("When would you like to pickup?", selection: $pickupTimeChoice) {
+                    ForEach(pickupTiming, id: \.self) {
+                        Text($0)
+                    }
+                }
+            }
 
             
             Section(header: Text("Total: \(totalPrice)")
-                .font(.largeTitle)) {
+                .font(.body)) {
                 Button("Confirm order") {
                     showingAlert.toggle()
                 }
